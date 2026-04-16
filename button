@@ -1,0 +1,21 @@
+import javax.swing.*;
+import java.awt.event.*;
+class ButtonDemol extends JFrame implements ActionListener{
+  JButton btn;
+  ButtonDemol(){
+    setTitle("Button Click Demo");
+    setSize(300,200);
+    setLayout(null);
+    btn=new JButton("Click Me");
+    btn.setBound(80,70,120,30);
+    ad(btn);
+    btn.addActionListener(this);
+    setDefaultCloseOperation(JFrme.EXIT_ON_CLOSE);
+  }
+  publi void actionPerformed)ActionEvent e){
+    System.out.println("Button Clicked");
+  }
+  public static void main(String[] args){
+    new ButtonDemol().setVisible(true);
+  }
+}
