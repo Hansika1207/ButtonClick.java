@@ -8,11 +8,11 @@ class ButtonDemol extends JFrame implements ActionListener{
     setLayout(null);
     btn=new JButton("Click Me");
     btn.setBound(80,70,120,30);
-    ad(btn);
+    add(btn);
     btn.addActionListener(this);
-    setDefaultCloseOperation(JFrme.EXIT_ON_CLOSE);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
-  publi void actionPerformed)ActionEvent e){
+  public void actionPerformed)ActionEvent e){
     System.out.println("Button Clicked");
   }
   public static void main(String[] args){
